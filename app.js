@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static("public"));
 
 const corsOptions = {
-  origin: "https://paw-connect-front.vercel.app", // URL front
+  origin: "https://paw-connect-front-nine.vercel.app/", // URL front
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS", "HEAD"],
   allowedHeaders: ["Content-Type", "Authorization"],
