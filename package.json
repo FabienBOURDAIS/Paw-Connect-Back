@@ -9,9 +9,7 @@
     "dev": "nodemon app.js",
     "db:create": "psql -U pawconnect -d pawconnect -f data/create_tables.sql",
     "db:seeding": "node data/seedingDatabase.js",
-    "db:reset": "pnpm run db:create && pnpm run db:seeding",
-    "db:create_prod": "psql -h ep-blue-boat-a2c55s9w-pooler.eu-central-1.aws.neon.tech -p 5432 -U default -d verceldb -f data/create_tables.sql",
-    "db:reset_prod": "pnpm run db:create_prod && pnpm run db:seeding"
+    "db:reset": "pnpm run db:create && pnpm run db:seeding"
   },
   "keywords": [],
   "author": "",
